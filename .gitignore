@@ -1,0 +1,40 @@
+## Visual Studio / IDE
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+## .NET
+*.nupkg
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## NuGet
+packages/
+*.nuspec
+
+## Publish
+[Pp]ublish/
+PublishProfiles/
+
+## User-specific files
+*.rsuser
+*.pidb
+*.booproj
+
+## Secrets / Config local
+appsettings.Development.json
+secrets.json
+
+## OS
+Thumbs.db
+.DS_Store
