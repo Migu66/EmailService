@@ -32,3 +32,6 @@ Necesito desarrollar un Microservicio de Envío de Emails altamente escalable y r
 - Asegúrate de usar las nuevas características de rendimiento de .NET 10 si aplican.
 - El código debe ser "Production Ready", con manejo de excepciones y disposición correcta de recursos (usando `using` statements).
 - Incluye comentarios breves explicando por qué usas cada configuración de Azure Service Bus.
+
+
+Cada vez que te pida un paso o algo lo tendras que explicar detalladamente, no solo el código, sino también el por qué de cada decisión técnica.

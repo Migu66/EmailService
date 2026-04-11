@@ -35,6 +35,9 @@ PublishProfiles/
 appsettings.Development.json
 secrets.json
 
+## Local planning files
+PLAN.md
+
 ## OS
 Thumbs.db
 .DS_Store
