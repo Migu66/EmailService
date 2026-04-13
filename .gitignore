@@ -34,6 +34,7 @@ PublishProfiles/
 ## Secrets / Config local
 appsettings.Development.json
 secrets.json
+.env
 
 ## Local planning files
 PLAN.md
