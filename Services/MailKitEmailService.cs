@@ -32,7 +32,11 @@ public sealed class MailKitEmailService(
 
             using var client = new SmtpClient();
             await client.ConnectAsync(_smtp.Host, _smtp.Port, cancellationToken: cancellationToken);
-            await client.AuthenticateAsync(_smtp.Username, _smtp.Password, cancellationToken);
+
+            // Solo autenticamos si hay credenciales configuradas (smtp4dev no las necesita).
+            if (!string.IsNullOrWhiteSpace(_smtp.Username))
+                await client.AuthenticateAsync(_smtp.Username, _smtp.Password, cancellationToken);
+
             await client.SendAsync(message, cancellationToken);
             await client.DisconnectAsync(true, cancellationToken);
 
